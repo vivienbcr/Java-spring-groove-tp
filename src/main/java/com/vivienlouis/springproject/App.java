@@ -1,5 +1,7 @@
 package com.vivienlouis.springproject;
 
+import com.vivienlouis.springproject.model.Film;
+import com.vivienlouis.springproject.repository.FilmRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,6 +18,16 @@ public class App {
     @GetMapping("/getAll")
     public @ResponseBody Iterable<Film> getAllFilms() {
         return filmRepository.findAll();
+    }
+    @GetMapping("/film")
+    public @ResponseBody Film getFilm(@RequestParam Integer id) {
+        Film film = filmRepository.findByFilmid(id);
+        return film;
+    }
+    @GetMapping("/avis")
+    public @ResponseBody String getAvis(@RequestParam Integer id) {
+        Film film = filmRepository.findByFilmid(id);
+        return "press:" + film.getFilm_etoilespresse() + ", spec :" + film.getFilm_etoilesspectateurs() ;
     }
 
 }

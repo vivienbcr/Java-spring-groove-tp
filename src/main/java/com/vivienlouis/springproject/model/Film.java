@@ -1,15 +1,14 @@
-package com.vivienlouis.springproject;
+package com.vivienlouis.springproject.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Film {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer film_id;
+
+    @Column(name = "film_id")
+    private Integer filmid;
 
     private String film_titre;
     private String film_url_affiche;
@@ -18,8 +17,10 @@ public class Film {
     private Integer film_court;
     private Integer film_anneeproduction;
     private String film_synopsis;
-    private Integer film_etoilespresse;
-    private Integer film_etoilesspectateurs;
+    @Column(name = "film_etoilespresse")
+    private Integer filmetoilespresse;
+    @Column(name = "film_etoilesspectateurs")
+    private Integer filmetoilesspectateurs;
     private String film_info;
     private String film_genre;
     private String film_public;
@@ -28,11 +29,11 @@ public class Film {
     private String film_distribuepar;
 
     public Integer getFilm_id() {
-        return film_id;
+        return filmid;
     }
 
-    public void setFilm_id(Integer film_id) {
-        this.film_id = film_id;
+    public void setFilm_id(Integer filmid) {
+        this.filmid = filmid;
     }
 
     public String getFilm_titre() {
@@ -92,19 +93,19 @@ public class Film {
     }
 
     public Integer getFilm_etoilespresse() {
-        return film_etoilespresse;
+        return filmetoilespresse;
     }
 
     public void setFilm_etoilespresse(Integer film_etoilespresse) {
-        this.film_etoilespresse = film_etoilespresse;
+        this.filmetoilespresse = filmetoilespresse;
     }
 
     public Integer getFilm_etoilesspectateurs() {
-        return film_etoilesspectateurs;
+        return filmetoilesspectateurs;
     }
 
     public void setFilm_etoilesspectateurs(Integer film_etoilesspectateurs) {
-        this.film_etoilesspectateurs = film_etoilesspectateurs;
+        this.filmetoilesspectateurs = filmetoilesspectateurs;
     }
 
     public String getFilm_info() {
