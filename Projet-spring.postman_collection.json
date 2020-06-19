@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "9ff807da-d263-492b-b8e9-789409b75638",
+		"name": "Projet-spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/film?id=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/film?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"film"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/film?id=2&titre=oklm&url_affiche=http://lurl&datesortie=12345&duree=123456&court=12&anneeproduction=1221&synopsis=zadazdazdazdazdzadazdazdazd&etoilespresse=2&etoilesspectateurs=2&info=0&genre=azerty&destpublic=azeezaezaeaze&remake=dsfdsgsdyer&titreoriginal=eszgferhytrgbdfc&distribuepar=zerygfdgdgh",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/film?id=2&titre=oklm&url_affiche=http://lurl&datesortie=12345&duree=123456&court=12&anneeproduction=1221&synopsis=zadazdazdazdazdzadazdazdazd&etoilespresse=2&etoilesspectateurs=2&info=0&genre=azerty&destpublic=azeezaezaeaze&remake=dsfdsgsdyer&titreoriginal=eszgferhytrgbdfc&distribuepar=zerygfdgdgh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"film"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "titre",
+							"value": "oklm"
+						},
+						{
+							"key": "url_affiche",
+							"value": "http://lurl"
+						},
+						{
+							"key": "datesortie",
+							"value": "12345"
+						},
+						{
+							"key": "duree",
+							"value": "123456"
+						},
+						{
+							"key": "court",
+							"value": "12"
+						},
+						{
+							"key": "anneeproduction",
+							"value": "1221"
+						},
+						{
+							"key": "synopsis",
+							"value": "zadazdazdazdazdzadazdazdazd"
+						},
+						{
+							"key": "etoilespresse",
+							"value": "2"
+						},
+						{
+							"key": "etoilesspectateurs",
+							"value": "2"
+						},
+						{
+							"key": "info",
+							"value": "0"
+						},
+						{
+							"key": "genre",
+							"value": "azerty"
+						},
+						{
+							"key": "destpublic",
+							"value": "azeezaezaeaze"
+						},
+						{
+							"key": "remake",
+							"value": "dsfdsgsdyer"
+						},
+						{
+							"key": "titreoriginal",
+							"value": "eszgferhytrgbdfc"
+						},
+						{
+							"key": "distribuepar",
+							"value": "zerygfdgdgh"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/film?id=2&titre=oklm&url_affiche=http://lurl&datesortie=12345&duree=123456&court=12&anneeproduction=1221&synopsis=zadazdazdazdazdzadazdazdazd&etoilespresse=2&etoilesspectateurs=2&info=0&genre=azerty&destpublic=azeezaezaeaze&remake=ds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/film?id=2&titre=oklm&url_affiche=http://lurl&datesortie=12345&duree=123456&court=12&anneeproduction=1221&synopsis=zadazdazdazdazdzadazdazdazd&etoilespresse=2&etoilesspectateurs=2&info=0&genre=azerty&destpublic=azeezaezaeaze&remake=dsfdsgsdyer&titreoriginal=eszgferhytrgbdfc&distribuepar=zerygfdgdgh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"film"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "titre",
+							"value": "oklm"
+						},
+						{
+							"key": "url_affiche",
+							"value": "http://lurl"
+						},
+						{
+							"key": "datesortie",
+							"value": "12345"
+						},
+						{
+							"key": "duree",
+							"value": "123456"
+						},
+						{
+							"key": "court",
+							"value": "12"
+						},
+						{
+							"key": "anneeproduction",
+							"value": "1221"
+						},
+						{
+							"key": "synopsis",
+							"value": "zadazdazdazdazdzadazdazdazd"
+						},
+						{
+							"key": "etoilespresse",
+							"value": "2"
+						},
+						{
+							"key": "etoilesspectateurs",
+							"value": "2"
+						},
+						{
+							"key": "info",
+							"value": "0"
+						},
+						{
+							"key": "genre",
+							"value": "azerty"
+						},
+						{
+							"key": "destpublic",
+							"value": "azeezaezaeaze"
+						},
+						{
+							"key": "remake",
+							"value": "dsfdsgsdyer"
+						},
+						{
+							"key": "titreoriginal",
+							"value": "eszgferhytrgbdfc"
+						},
+						{
+							"key": "distribuepar",
+							"value": "zerygfdgdgh"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/avis?id=4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/avis?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avis"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/film?id=1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/film?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"film"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

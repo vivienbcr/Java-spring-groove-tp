@@ -21,7 +21,7 @@ public class Film {
     private Integer filmetoilespresse;
     @Column(name = "film_etoilesspectateurs")
     private Integer filmetoilesspectateurs;
-    private String film_info;
+    private Integer film_info;
     private String film_genre;
     private String film_public;
     private String film_remake;
@@ -108,11 +108,11 @@ public class Film {
         this.filmetoilesspectateurs = filmetoilesspectateurs;
     }
 
-    public String getFilm_info() {
+    public Integer getFilm_info() {
         return film_info;
     }
 
-    public void setFilm_info(String film_info) {
+    public void setFilm_info(Integer film_info) {
         this.film_info = film_info;
     }
 

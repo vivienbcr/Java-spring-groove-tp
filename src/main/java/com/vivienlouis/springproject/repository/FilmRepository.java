@@ -6,5 +6,4 @@ import com.vivienlouis.springproject.model.Film;
 
 public interface FilmRepository extends CrudRepository<Film, Integer> {
     Film findByFilmid(Integer id);
-
 }
