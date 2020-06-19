@@ -1,15 +1,16 @@
-package com.example.demo;
+package com.vivienlouis.springproject;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity // This tells Hibernate to make a table out of this class
+@Entity
 public class Film {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer film_id;
+
     private String film_titre;
     private String film_url_affiche;
     private String film_datesortie;
@@ -19,7 +20,7 @@ public class Film {
     private String film_synopsis;
     private Integer film_etoilespresse;
     private Integer film_etoilesspectateurs;
-    private Integer film_info;
+    private String film_info;
     private String film_genre;
     private String film_public;
     private String film_remake;
@@ -106,11 +107,11 @@ public class Film {
         this.film_etoilesspectateurs = film_etoilesspectateurs;
     }
 
-    public Integer getFilm_info() {
+    public String getFilm_info() {
         return film_info;
     }
 
-    public void setFilm_info(Integer film_info) {
+    public void setFilm_info(String film_info) {
         this.film_info = film_info;
     }
 
